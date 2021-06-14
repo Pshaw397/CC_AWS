@@ -5,12 +5,12 @@
 2. Press `Launch Instance` button
 3. Select your AMI, for this example select `Ubuntu Server 16.04 LTS (HVM), SSD Volume Type` and then move to the next step
 4. Choose your instance type, for this example select `t2 micro` and then move to the next step
-5. Select your preferred Network, for this example select: `vpc-07e47e9d90d2076da | DevOps VPC DO NOT DELETE (default)`
-6. Select your preferred Subnet, for this example select: `subnet-0e9b6138ff1ce18f2 | DevOpsStudentSubnet | eu-west-1b`
+5. Select your preferred Network
+6. Select your preferred Subnet
 7. Set auto assigne public IP to `Enable` and move onto the next step
 8. Leave storage as it is, and move onto the next step
 9. Add a tag, with the desired name of your instance, and move onto the next step
-10. Change the name of the security group to your desiered name, for this example use: `devops_bootcamp_securitygroup_phill`
+10. Change the name of the security group to your desiered name
 11. Set the source of the first rule to: `My IP`
 12. Create a new rule and set the Type to `HTTP`, then set the Source to `Anywhere`
 13. Create a new rule, leaving the Type as default, then set the Port Range to `3000`, then move onto the next step.
@@ -19,7 +19,7 @@
 16. Finish instance creation
 
 ## Starting the node application with your EC2 Instance
-1. After creating your EC2 instance, copy the app folder to the virtual machine, to do this use: `scp -i devop_bootcamp.pem -r [app location path] ubuntu@[remote client]:[remote location path]` This will copy the files over, make sure to be in your ssh folder when you run this.
+1. After creating your EC2 instance, copy the app folder to the virtual machine, to do this use: `scp -i [.pem file] -r [app location path] ubuntu@[remote client]:[remote location path]` This will copy the files over, make sure to be in your ssh folder when you run this.
 2. Run a provision file containing the commands required to install nodejs, this will contain the following commands:
 ```
 sudo apt-get update -y
