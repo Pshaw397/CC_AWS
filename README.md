@@ -67,7 +67,7 @@ server {
 - follow the steps on the following readme: [Multi Machine README](https://github.com/Pshaw397/Multi_Machine/blob/main/README.md)
 
 AWS Diagram
-![img](aws_diagram_png)
+![img](aws_diagram.png)
 
 AWS Multi Machine diagram
 ![img](aws_MM_diagram.png)
