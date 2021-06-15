@@ -18,6 +18,12 @@
 15. Select that file as your security group key pair
 16. Finish instance creation
 
+## Creating a DB instance
+Progress to the security group stage as in the previous steps, then:
+1. Set ssh port source to `My IP`
+2. Create a new rule, and set Port Range to `27017`, and set the source to: `Anywhere`
+3. Create 1 more rule, setting the Type to `HTTP`, and set the source to `Anywhere`
+
 ## Starting the node application with your EC2 Instance
 1. After creating your EC2 instance, copy the app folder to the virtual machine, to do this use: `scp -i [.pem file] -r [app location path] ubuntu@[remote client]:[remote location path]` This will copy the files over, make sure to be in your ssh folder when you run this.
 2. Run a provision file containing the commands required to install nodejs, this will contain the following commands:
@@ -55,3 +61,10 @@ server {
 
 [remote client] - example: `ubuntu@ec2-54-78-54-144.eu-west-1.compute.amazonaws.com` (available on `Connect to instance -> SSH client`)
 [remote location path] - example: `/home/ubuntu/app`
+
+## Setting up AWS multi machine
+- Create 2 git bash instances, ssh one into the app instance and the other into the db instance
+- follow the steps on the following readme: [Multi Machine README](https://github.com/Pshaw397/Multi_Machine/blob/main/README.md)
+
+
+
