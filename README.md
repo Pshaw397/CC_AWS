@@ -66,5 +66,9 @@ server {
 - Create 2 git bash instances, ssh one into the app instance and the other into the db instance
 - follow the steps on the following readme: [Multi Machine README](https://github.com/Pshaw397/Multi_Machine/blob/main/README.md)
 
+AWS Diagram
+![img](aws_diagram_png)
 
+AWS Multi Machine diagram
+![img](aws_MM_diagram.png)
 
